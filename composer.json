@@ -1,0 +1,21 @@
+{
+    "name": "oukhennicheabdelkrim/kikimr",
+    "description":"KikimR is a fast PHP micro-framework that helps you quickly write PHP web applications.",
+    "keywords": ["framework","micro","router"],
+    "version":"1.0.0",
+    "authors": [
+        {
+            "name": "OUKHENNICHE Abdelkrim",
+            "email": "oukhennicheabdelkrim@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload":{
+    	"psr-4":{"KikimR\\":"KikimR"}
+    },
+    "require": {
+        "php" : ">=5.6.0"
+    }
+
+}
