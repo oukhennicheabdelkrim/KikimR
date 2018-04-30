@@ -27,7 +27,7 @@ Router::get('/page_[id]',function($id){
     }
 })->with('id',RegExp::NUMBER);
 
-// profil?id=theId&type=topicType)
+// url: profil?id=theId&name=topicType)
 Router::get('profil',function(){
 
       if (Validator::$get->is(array('id'=>RegExp::NUMBER,'name'=>'[a-zA-Z]+')))
