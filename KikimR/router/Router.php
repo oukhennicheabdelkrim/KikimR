@@ -1,6 +1,5 @@
 <?php
 namespace KikimR\router;
-use KikimR\data\DataInput;
 
 class Router
 {

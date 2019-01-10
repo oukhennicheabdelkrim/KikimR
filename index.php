@@ -1,52 +1,42 @@
 <?php
 
-require'vendor/autoload.php';
+require 'vendor/autoload.php';
+
 use KikimR\KikimR as app;
 use KikimR\validator\RegExp;
-use KikimR\validator\Validator;
 use KikimR\router\Router;
-use KikimR\data\DataInput;
 
 //EXAMPLE
 
+function topicController($idTopic) {
+
+    $topicsId = [18, 2, 3];
+
+    if (in_array($idTopic, $topicsId)) {
+        echo "Topic : $idTopic";
+    } else {
+        Router::setStatusCode(404);
+    }
+}
+
 app::init();
-Router::addMiddleware(function (){});
+Router::addMiddleware(function () {
+    echo 'Started Middleware 1<br>';
+});
 
-Router::get('/',function(){ echo "Hello from KikimR";});
+Router::get('/', function () {
+    echo 'Hello from KikimR !';
+});
 
-Router::get('/page_[id]',function($id){
+Router::get('page_[id]','topicController')
+    ->with('id', RegExp::NUMBER);
 
-    $topicsId=[18,2,3];
-    if (in_array($id, $topicsId))
-    {
-        echo "Topic : $id <hr>";
-    }
-    else
-    {
-        Router::setStatusCode(404);
-    }
-})->with('id',RegExp::NUMBER);
-
-// url: profil?id=theId&name=topicType)
-Router::get('profil',function(){
-
-      if (Validator::$get->is(array('id'=>RegExp::NUMBER,'name'=>'[a-zA-Z]+')))
-      {
-        echo 'id = '.DataInput::$get['id'].' | name = '.DataInput::$get['name'].' <hr> ';
-      }
-      else
-      {
-        Router::setStatusCode(404);
-      }
-}); 
-
-
-
-Router::get('/error500',function(){Router::setStatusCode(500);});
 
 // method to call when Status Code is 404
-Router::whenStatusCode(404,function (){echo " 404 .Not found ";});
+Router::whenStatusCode(404, function () {
+    echo '404 .Not found';
+});
 
-app::run();
+app::run(); // Run App
 
 ?>

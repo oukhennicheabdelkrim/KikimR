@@ -3,6 +3,8 @@ namespace KikimR\router;
 
 
 
+use KikimR\Conf;
+
 /**
  *
  */
@@ -35,7 +37,7 @@ class route
             $this->clearParams();
             $path=preg_replace_callback('#\[[a-z0-9_]+\]#i', [$this,'paramsV'], $this->path[$i]);
 
-            $regexp='#^'.trim($this->name.'/'.$path,'/').'$#i';
+            $regexp='#^'.trim($this->name.'/'.$path,'/').'$#'.(Conf::URL_CASE_SENSITIVE?'':'i');
 
             if(preg_match($regexp,$url,$matches))
             {
