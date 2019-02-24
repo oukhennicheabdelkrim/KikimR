@@ -6,10 +6,10 @@
  * Time: 18:11
  */
 
-namespace KikimR\router;
+namespace  oukhennicheabdelkrim\KikimR\router;
 
 
-class View implements \KikimR\view\View
+class View implements  \oukhennicheabdelkrim\KikimR\view\View
 {
     public static function showMessage($message)
     {

@@ -6,7 +6,7 @@
  * Time: 05:26
  */
 
-namespace KikimR\validator;
+namespace  oukhennicheabdelkrim\KikimR\validator;
 
 
 class RegExp

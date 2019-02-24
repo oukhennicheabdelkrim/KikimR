@@ -1,5 +1,5 @@
 <?php
-namespace KikimR\router;
+namespace oukhennicheabdelkrim\KikimR\router;
 
 class Router
 {

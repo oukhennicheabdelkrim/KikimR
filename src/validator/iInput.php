@@ -6,7 +6,7 @@
  * Time: 19:18
  */
 
-namespace KikimR\validator;
+namespace  oukhennicheabdelkrim\KikimR\validator;
 
 
 interface iInput

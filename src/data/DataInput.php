@@ -5,7 +5,7 @@
  * Date: 23/02/2018
  * Time: 18:01
  */
-namespace KikimR\data;
+namespace oukhennicheabdelkrim\KikimR\data;
 class DataInput
 {
     public static $get=[];

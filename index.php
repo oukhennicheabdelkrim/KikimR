@@ -2,9 +2,9 @@
 
 require 'vendor/autoload.php';
 
-use KikimR\KikimR as app;
-use KikimR\validator\RegExp;
-use KikimR\router\Router;
+use oukhennicheabdelkrim\KikimR\KikimR as app;
+use oukhennicheabdelkrim\KikimR\validator\RegExp;
+use oukhennicheabdelkrim\KikimR\router\Router;
 
 //EXAMPLE
 

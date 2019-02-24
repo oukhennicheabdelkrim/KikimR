@@ -6,7 +6,7 @@
  * Time: 12:09
  */
 
-namespace KikimR\view;
+namespace  oukhennicheabdelkrim\KikimR\view;
 
 
 interface View

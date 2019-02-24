@@ -6,7 +6,7 @@
  * Time: 20:19
  */
 
-namespace KikimR\validator;
+namespace  oukhennicheabdelkrim\KikimR\validator;
 
 
 abstract class Input implements iInput

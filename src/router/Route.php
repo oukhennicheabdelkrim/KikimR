@@ -1,9 +1,9 @@
 <?php
-namespace KikimR\router;
+namespace oukhennicheabdelkrim\KikimR\router;
 
 
 
-use KikimR\Conf;
+use oukhennicheabdelkrim\KikimR\Conf;
 
 /**
  *

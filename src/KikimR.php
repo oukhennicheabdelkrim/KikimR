@@ -6,12 +6,12 @@
  * Time: 22:08
  */
 
-namespace KikimR;
+namespace  oukhennicheabdelkrim\KikimR;
 
 
-use KikimR\router\Router;
-use KikimR\validator\Validator;
-use KikimR\data\DataInput;
+use  oukhennicheabdelkrim\KikimR\router\Router;
+use  oukhennicheabdelkrim\KikimR\validator\Validator;
+use  oukhennicheabdelkrim\KikimR\data\DataInput;
 
 class KikimR
 {

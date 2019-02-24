@@ -6,7 +6,7 @@
  * Time: 19:00
  */
 
-namespace KikimR\validator;
+namespace  oukhennicheabdelkrim\KikimR\validator;
 class Validator
 {
     public static $get;

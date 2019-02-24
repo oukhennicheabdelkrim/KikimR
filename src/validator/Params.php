@@ -6,7 +6,7 @@
  * Time: 19:35
  */
 
-namespace KikimR\validator;
+namespace  oukhennicheabdelkrim\KikimR\validator;
 
 
 
